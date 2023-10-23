@@ -11,6 +11,7 @@ public class problem4 {
         String string = stringTokenizer.nextToken();
         int n = string.length();
         StringBuilder stringBuilder = new StringBuilder();
+        // 1. 내 풀이 (아스키코드값 사용)
         for (int i = 0; i < n; i++) {
             char character = string.charAt(i);
             char swapCharacter;
@@ -24,6 +25,16 @@ public class problem4 {
             stringBuilder.append(swapCharacter);
         }
 
+        System.out.println(stringBuilder);
+        // 2. 다른 사람 풀이(내부 함수 사용)
+        for(Character c : string.toCharArray()){
+            if(Character.isUpperCase(c)){
+                stringBuilder.append(Character.toLowerCase(c));
+            }
+            if(Character.isLowerCase(c)){
+                stringBuilder.append(Character.toUpperCase(c));
+            }
+        }
         System.out.println(stringBuilder);
     }
 }
