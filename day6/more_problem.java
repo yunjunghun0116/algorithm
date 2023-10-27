@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class more_problem {
+    // 주사위 게임3
     public int solution(int a, int b, int c, int d) {
         int[] numList = {a, b, c, d};
         Map<Integer, Integer> hashMap = new HashMap<>();
