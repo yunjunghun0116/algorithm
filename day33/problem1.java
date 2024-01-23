@@ -29,29 +29,30 @@ public class problem1 {
             dst2.add(new int[]{fare[0], fare[2]});
             roadMap.put(fare[1], dst2);
         }
-
-        int aMinCost = getMinCost(s, a);
-        int bMinCost = getMinCost(s, b);
+        int[][] minCostArray = new int[3][n+1];
+        minCostArray[0] = getMinCostArray(s);
+        minCostArray[1] = getMinCostArray(a);
+        minCostArray[2] = getMinCostArray(b);
+        int aMinCost = minCostArray[0][a];
+        int bMinCost = minCostArray[0][b];
 
         int minValue = Integer.MAX_VALUE;
         for (int i = 1; i <= n; i++) {
-            int value = getMinCost(s, i) + getMinCost(i,a) + getMinCost(i,b);
+            int value = minCostArray[0][i] + minCostArray[1][i] + minCostArray[2][i];
             minValue = Math.min(minValue, value);
         }
 
-        return Math.min(aMinCost + bMinCost, minValue);
+        return Math.min(aMinCost+bMinCost,minValue);
     }
 
-    public static int getMinCost(int start, int end) {
-        if (start == end) return 0;
-
+    public static int[] getMinCostArray(int start) {
         PriorityQueue<int[]> queue = new PriorityQueue<>(Comparator.comparing((int[] point)->point[1]));
 
         int[] cost = new int[maxSize + 1];
         Arrays.fill(cost, Integer.MAX_VALUE);
         // 목적지점, value 누적
 
-        queue.offer(new int[]{start, 0});
+        queue.add(new int[]{start, 0});
         cost[start] = 0;
         while (!queue.isEmpty()) {
             int[] pollData = queue.poll();
@@ -63,10 +64,10 @@ public class problem1 {
                 int nextCost = dst[1] + pollData[1];
                 if (cost[nextDst] <= nextCost) continue;
                 cost[nextDst] = nextCost;
-                queue.offer(new int[]{nextDst, nextCost});
+                queue.add(new int[]{nextDst, nextCost});
             }
         }
 
-        return cost[end];
+        return cost;
     }
 }
