@@ -29,6 +29,7 @@ public class problem1 {
             dst2.add(new int[]{fare[0], fare[2]});
             roadMap.put(fare[1], dst2);
         }
+
         int[][] minCostArray = new int[3][n+1];
         minCostArray[0] = getMinCostArray(s);
         minCostArray[1] = getMinCostArray(a);

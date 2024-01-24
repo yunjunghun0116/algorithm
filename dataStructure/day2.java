@@ -5,7 +5,7 @@ public class day2 {
             attendanceBook.insertStudent("name"+i);
         }
         attendanceBook.deleteStudent(4);
-
+        attendanceBook.deleteStudent("name1");
         attendanceBook.showAllStudents();
     }
 
