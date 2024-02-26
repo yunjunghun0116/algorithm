@@ -5,7 +5,7 @@ public class problem1 {
         int[][] result = solution(new int[][]{{5, 3}, {11, 5}, {13, 3}, {3, 5}, {6, 1}, {1, 3}, {8, 6}, {7, 2}, {2, 2}});
     }
 
-    public static int[][] solution(int[][] nodeinfo) {
+    private static int[][] solution(int[][] nodeinfo) {
 
         List<int[]> nodeList = new ArrayList<>();
 
@@ -37,7 +37,7 @@ public class problem1 {
         return new int[][]{preOrderResult,postOrderResult};
     }
 
-    public static Node add(Node preNode, int count, int newValue) {
+    private static Node add(Node preNode, int count, int newValue) {
         if (newValue < preNode.value) {
             if (preNode.left == null) {
                 preNode.left = new Node(count, newValue);
@@ -54,7 +54,7 @@ public class problem1 {
         return preNode;
     }
 
-    public static void printNode(Node root) {
+    private static void printNode(Node root) {
         Queue<Node> nodeQueue = new LinkedList<>();
         nodeQueue.add(root);
 
@@ -70,7 +70,7 @@ public class problem1 {
         }
     }
 
-    public static int[] preOrder(Node root) {
+    private static int[] preOrder(Node root) {
         List<Integer> result = new ArrayList<>();
         Stack<Node> nodeStack = new Stack<>();
 
@@ -91,7 +91,7 @@ public class problem1 {
         return result.stream().mapToInt(Integer::intValue).toArray();
     }
 
-    public static int[] postOrder(Node root) {
+    private static int[] postOrder(Node root) {
         List<Integer> result = new ArrayList<>();
         Stack<Node> nodeStack = new Stack<>();
 
@@ -112,7 +112,7 @@ public class problem1 {
         return result.stream().mapToInt(Integer::intValue).toArray();
     }
 
-    static class Node {
+    private static class Node {
         Integer number;
         Integer value;
         Node left;
