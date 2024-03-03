@@ -52,7 +52,6 @@ public class problem3 {
             if(answer[i] > maxValue){
                 maxValue = answer[i];
                 maxCount = 1;
-                continue;
             }
             if(answer[i] == maxValue){
                 maxCount++;
