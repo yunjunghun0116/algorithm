@@ -8,6 +8,7 @@ public class problem5 {
         //solution(0, new int[]{1, 12, 2, 11, 3, 10, 4, 9, 5, 8, 6, 7});
     }
 
+
     public static int solution(int coin, int[] cards) {
 
         // 배열에서 가지고있는건 0 - n/3까지 갖고있고
