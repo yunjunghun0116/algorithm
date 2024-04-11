@@ -57,7 +57,6 @@ public class data_structure {
 
         TreeSet<int[]> heap = new TreeSet<>((a,b)->b[0]-a[0]);
         TreeSet<Integer> tree = new TreeSet<>((a,b)->b-a);
-
         Map<Integer,Integer> numberMap = new HashMap<>();
 
     }
