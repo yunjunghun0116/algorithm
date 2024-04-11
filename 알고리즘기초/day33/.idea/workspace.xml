@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d894b70f-61e1-4038-a976-b6cbdde121b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/problem4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day34/problem1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/AttendanceBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure/AttendanceBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/day2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure/day2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/out/production/dataStructure/AttendanceBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure/out/production/dataStructure/AttendanceBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/out/production/dataStructure/day2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure/out/production/dataStructure/day2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/day33/problem1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/day33/problem1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/day33/problem3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/day33/problem3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem1.java" beforeDir="false" afterPath="$PROJECT_DIR$/problem1.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2b7VtoZXrvwxLSQzIO0mq0mCkfe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last.edited.regexp&quot;: &quot;\n&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yunjeonghun/Desktop/DevelopProject/algorithm/day33&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.problem4">
+    <configuration name="problem1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problem1" />
+      <module name="day33" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="problem2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problem2" />
+      <module name="day33" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="problem3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problem3" />
+      <module name="day33" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="problem4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problem4" />
+      <module name="day33" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.problem4" />
+        <item itemvalue="Application.problem3" />
+        <item itemvalue="Application.problem2" />
+        <item itemvalue="Application.problem1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d894b70f-61e1-4038-a976-b6cbdde121b9" name="Changes" comment="" />
+      <created>1705566321614</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705566321614</updated>
+      <workItem from="1705566323771" duration="7318000" />
+      <workItem from="1705658310212" duration="148000" />
+      <workItem from="1705985847298" duration="13579000" />
+      <workItem from="1706007143220" duration="371000" />
+      <workItem from="1706070226776" duration="14000" />
+      <workItem from="1706242179002" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
