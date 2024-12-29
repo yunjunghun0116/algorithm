@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class problem1 {
     static int minStress = Integer.MAX_VALUE;
@@ -42,7 +43,7 @@ public class problem1 {
     public static void findMineral(String[] remainMinerals, int currentCount, int[] remainPicks, int currentStress) {
         boolean noPicks = true;
         for (int i = 0; i < 3; i++) {
-            if (remainPicks[i] != 0){
+            if (remainPicks[i] != 0) {
                 noPicks = false;
                 break;
             }
