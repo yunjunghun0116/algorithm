@@ -1,5 +1,0 @@
-public class problem5 {
-    public int solution(String n_str) {
-        return Integer.parseInt(n_str);
-    }
-}
