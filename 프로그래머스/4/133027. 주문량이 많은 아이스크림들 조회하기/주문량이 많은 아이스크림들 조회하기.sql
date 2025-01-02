@@ -1,0 +1,2 @@
+select fh.flavor from first_half fh join (select flavor,sum(total_order) as total_order from july group by flavor) as jul on fh.flavor = jul.flavor
+order by fh.total_order+jul.total_order desc limit 3;
