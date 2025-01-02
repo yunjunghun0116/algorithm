@@ -1,15 +1,16 @@
+package 기초문법
+
 import java.io.BufferedReader
 import java.io.InputStreamReader
-import java.util.Scanner
-import java.util.StringTokenizer
+import java.util.*
 import kotlin.math.max
 import kotlin.random.Random
 
-fun main() = with(BufferedReader(InputStreamReader(System.`in`))){
+fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     // 상수 처리
     val i = 10
     val j = 20
-    print(max(i,j))
+    print(max(i, j))
 
     // 랜덤 값 추출
     val randomNum = Random.nextInt(0, 100) // 0~99
@@ -21,5 +22,5 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))){
     // reader.nextLine()
     // 2. with 를 사용한 입력 받기
     val token = StringTokenizer(readLine())
-    print(Integer.parseInt(token.nextToken())+Integer.parseInt(token.nextToken()))
+    print(Integer.parseInt(token.nextToken()) + Integer.parseInt(token.nextToken()))
 }
