@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Main {
     public static List<String> strings = new ArrayList<>();
+    public static Set<Character> charSet = new HashSet<>();
 
     public static void main(String[] args) {
         initialize();
@@ -18,42 +19,24 @@ public class Main {
     }
 
     public static void solve() {
-        Set<Character> charSet = new HashSet<>();
         List<String> resultList = new ArrayList<>();
 
         for (String string : strings) {
-            if (string.isEmpty()) {
-                resultList.add(string);
-                continue;
-            }
             String[] str = string.split(" ");
             String result = "";
             boolean isChanged = false;
             for (String s : str) {
                 if (isChanged) {
-                    if (result.isEmpty()) {
-                        result = s;
-                        continue;
-                    }
-                    result = result + " " + s;
+                    result = addString(result, s);
                     continue;
                 }
-                if (!charSet.contains(Character.toUpperCase(s.charAt(0)))) {
-                    charSet.add(Character.toUpperCase(s.charAt(0)));
-                    String changedString = changeString(s, 0);
+                String addString = canAddChar(s, 0);
+                if (!addString.isEmpty()) {
                     isChanged = true;
-                    if (result.isEmpty()) {
-                        result = changedString;
-                        continue;
-                    }
-                    result = result + " " + changedString;
+                    result = addString(result, addString);
                     continue;
                 }
-                if (result.isEmpty()) {
-                    result = s;
-                    continue;
-                }
-                result = result + " " + s;
+                result = addString(result, s);
             }
             if (isChanged) {
                 resultList.add(result);
@@ -62,10 +45,9 @@ public class Main {
             for (int i = 0; i < string.length(); i++) {
                 if (isChanged) continue;
                 if (string.charAt(i) == ' ') continue;
-                if (!charSet.contains(Character.toUpperCase(string.charAt(i)))) {
-                    charSet.add(Character.toUpperCase(string.charAt(i)));
-                    String changedString = changeString(string, i);
-                    resultList.add(changedString);
+                String addString = canAddChar(string, i);
+                if (!addString.isEmpty()) {
+                    resultList.add(addString);
                     isChanged = true;
                 }
             }
@@ -81,6 +63,19 @@ public class Main {
         for (String str : result) {
             System.out.println(str);
         }
+    }
+
+    public static String addString(String prev, String nextString) {
+        if (prev.isEmpty()) {
+            return nextString;
+        }
+        return prev + " " + nextString;
+    }
+
+    public static String canAddChar(String string, int idx) {
+        if (charSet.contains(Character.toUpperCase(string.charAt(idx)))) return "";
+        charSet.add(Character.toUpperCase(string.charAt(idx)));
+        return changeString(string, idx);
     }
 
     public static String changeString(String str, int idx) {
