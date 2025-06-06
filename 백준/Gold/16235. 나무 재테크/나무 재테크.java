@@ -35,10 +35,10 @@ public class Main {
 
         for (int i = 0; i < m; i++) {
             String[] treeInput = sc.nextLine().split(" ");
-            int x = Integer.parseInt(treeInput[0]) - 1;
-            int y = Integer.parseInt(treeInput[1]) - 1;
+            int x = Integer.parseInt(treeInput[1]) - 1;
+            int y = Integer.parseInt(treeInput[0]) - 1;
             int age = Integer.parseInt(treeInput[2]);
-            Tree tree = new Tree(x, y, age);
+            Tree tree = new Tree(y, x, age);
 
             trees.add(tree);
         }
