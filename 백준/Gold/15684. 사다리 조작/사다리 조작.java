@@ -73,8 +73,10 @@ public class Main {
             }
             return;
         }
-
         if (pos >= H * (N - 1)) return;
+        // 이거 윗줄에 했다가 계속 틀렸는데, 생각해보면 pos == H * (N-1) 인 경우에도 이 함수를 호출할 수 밖에 없음
+        // 그 이유는, pos 가 맨 마지막일 경우(H * (N-1) -1 )에도 이 함수가 pos == H *(N-1) 인 상태로 호출되기 때문임
+        // 그 때, check()를 돌려보니 성공할 수도 있음
 
         int row = pos / (N - 1);
         int col = pos % (N - 1);
